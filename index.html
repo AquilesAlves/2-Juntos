@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Proporcional</title>
+</head>
+<body>
+    <section>
+        <main>
+            <h1>Calculadora de Troca de Vencimento</h1>
+            <p>Dia do vencimento atual:</p>
+            <input type="number" class="input" id="vencimentoAtual" min="1" max="31">
+            <p>Dia do novo vencimento:</p>
+            <input type="number" class="input" id="vencimentoNovo" min="1" max="31">
+            <p>Valor do plano (R$):</p>
+            <input type="number" class="input" id="valorPlano" step="0.01">
+            <button onclick="trocaVencimento()">Calcular</button>
+        
+            <div class="msg" id="msg1" ></div>
+            <button id="copy1" style="display: none" onclick="copiar1()" >Copiar</button>
+            <div class="msg" id="msg2" ></div>
+            <button id="copy2" style="display: none" onclick="copiar2()" >Copiar</button>
+        </main>
+        <main>
+          <h1>Calculadora de Troca de Plano</h1>
+          <p>Digite o valor do plano antigo:</p>
+          <input type="number" class="input" id="valorAntigo">
+          <p>Digite o valor do plano novo:</p>
+          <input type="number" class="input" id="valorNovo">
+        
+          <p>Digite a data de vencimento:</p>
+          <input type="number" class="input" id="vencimento" min="1" max="30">
+        
+          <p>Digite a data da Troca:</p>
+          <input type="number" class="input" id="dataTroca">
+          <button class="calcular" onclick="calculaProporcional()">Calcular</button>
+        
+          <div class="msg" id="msg1" ></div>
+          <button id="copy1" style="display: none" onclick="copiar1()" >Copiar</button>
+          <div class="msg" id="msg2"></div>
+          <button id="copy2" style="display: none" onclick="copiar2()" >Copiar</button>
+        </main>
+    </section>
+        
+<script src="script.js"></script>
+
+</body>
+</html>
