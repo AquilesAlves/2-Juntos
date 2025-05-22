@@ -119,7 +119,7 @@ function calculaProporcional() {
         Cliente solicitou a troca do plano
         Proporcional de ${diasPlanoAntigo} dias do plano antigo R$${proporcionalAntigo}
         e ${diasPlanoNovo} dias do plano novo R$${proporcionalNovo}<br>
-        Total de R$${valorTotal}<br>
+        Valor total de R$${valorTotal} referente aos dias<br>
         Ciente do novo valor R$${valorNovo}
     `
     document.getElementById('copy4').style.display = 'block'
