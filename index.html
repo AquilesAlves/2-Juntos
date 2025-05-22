@@ -9,6 +9,7 @@
 <body>
     <section>
         <div class="div1">
+            <!---------------------CALCULADORA DE VENCIMENTO---------------------->
             <h1>Proporcional de Vencimento</h1>
             <p>Dia do vencimento atual:</p>
             <input type="number" class="input" id="vencimentoAtual" min="1" max="31">
@@ -28,36 +29,38 @@
         </div>
 
 
+            <!---------------------CALCULADORA DE TROCA DE PLANO---------------------->
         <div class="div2">
-          <h1>Proporcional de Plano</h1>
-          <p>Digite o valor do plano antigo:</p>
-          <input type="number" class="input" id="valorAntigo">
+            <h1>Proporcional de Plano</h1>
+            <p>Digite o valor do plano antigo:</p>
+            <input type="number" class="input" id="valorAntigo">
 
-          <p>Digite o valor do plano novo:</p>
-          <input type="number" class="input" id="valorNovo">
+            <p>Digite o valor do plano novo:</p>
+            <input type="number" class="input" id="valorNovo">
 
-          <p>Digite o dia do vencimento:</p>
-          <input type="number" class="input" id="vencimento" min="1" max="30">
+            <p>Digite o dia do vencimento:</p>
+            <input type="number" class="input" id="vencimento" min="1" max="30">
         
-          <p>Digite o dia da Troca:</p>
-          <input type="number" class="input" id="dataTroca">
-          <button class="botao1" onclick="calculaProporcional()">Calcular</button>
+            <p>Digite o dia da Troca:</p>
+            <input type="number" class="input" id="dataTroca">
+            <button class="botao1" onclick="trocaPlano()">Calcular</button>
         
-          <div class="msg" id="msg3" ></div>
-          <button class="botoes" id="copy3" style="display: none" onclick="copiar3()" >Copiar</button>
+            <div class="msg" id="msg3" ></div>
+            <button class="botoes" id="copy3" style="display: none" onclick="copiar3()" >Copiar</button>
 
-          <div class="msg" id="msg4"></div>
-          <button class="botoes" id="copy4" style="display: none" onclick="copiar4()" >Copiar</button>
+            <div class="msg" id="msg4"></div>
+            <button class="botoes" id="copy4" style="display: none" onclick="copiar4()" >Copiar</button>
         </div>
 
 
+            <!-----------------------CALCULADORA DE DESCONTO--------------------------->
         <div class="div3">
             <h1>Desconto/cancelamento</h1>
             <p>Digite os dias proporcionais:</p>
             <input type="number" class="input" id="diasProporcionais">
 
             <p>Digite o valor do plano (R$):</p>
-            <input type="number" class="input" id="valorPlano">
+            <input type="number" class="input" id="valorDoPlano">
             <button class="botao1" onclick="proporcional()">Calcular</button>
 
             <div class="msg" id="msg5">teste</div>

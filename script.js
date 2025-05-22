@@ -1,3 +1,4 @@
+//------------------------------------CALCULADORA DE VENCIMENTO---------------------------------
 function trocaVencimento() {
     const vencimentoAtual = parseInt(document.getElementById('vencimentoAtual').value)
     const vencimentoNovo = parseInt(document.getElementById('vencimentoNovo').value)
@@ -6,7 +7,6 @@ function trocaVencimento() {
     const msg2 = document.getElementById('msg2')
 
     let diariaPlano = valorPlano / 30
-
     let diasProporcionais = 0
     let proporcional = 0
     let valorTotal = 0
@@ -48,20 +48,19 @@ function trocaVencimento() {
         Total de R$${valorTotal}</p>
     `
     document.getElementById('copy2').style.display = 'block'
-
 }
 
 function copiar1() {
     navigator.clipboard.writeText(document.getElementById('msg1').innerText)
 }
-
 function copiar2() {
     navigator.clipboard.writeText(document.getElementById('msg2').innerText)
 
 }
 
-//calcula quando aperta o botão
-function calculaProporcional() {
+
+//------------------------------------CALCULADORA DE TROCA DE PLANO------------------------------------
+function trocaPlano() {
     let valorAntigo = parseFloat(document.getElementById('valorAntigo').value)
     let valorNovo = parseFloat(document.getElementById('valorNovo').value)
     const vencimento = parseInt(document.getElementById('vencimento').value)
@@ -132,4 +131,15 @@ function copiar3() {
 
 function copiar4() {
     navigator.clipboard.writeText(document.getElementById('msg4').innerText)
+}
+
+
+//-------------------------------------CALCULADORA DE DESCONTO---------------------------------------
+function proporcional(){
+    let diasProporcionais = parseInt(document.getElementById('diasProporcionais').value)
+    let valorDoPlano = parseFloat(document.getElementById('valorDoPlano').value)
+    const msg5 = document.getElementById('msg5')
+
+    let diariaPlano = valorDoPlano/30
+    let valorProporcional = 0
 }
