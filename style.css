@@ -13,11 +13,14 @@ body{
 section{
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
 }
 
 .main1{
-    width: 370px;
+    width: 345px;
     padding: 30px;
     padding-bottom: 45px;
     display: flex;
@@ -28,6 +31,7 @@ section{
     border-radius: 15px;
 }
 .main2{
+    width: 345px;
     padding: 30px;
     padding-bottom: 45px;
     display: flex;
@@ -40,6 +44,7 @@ section{
 
 h1{
     font-size: 24px;
+    color: rgb(100, 185, 108);
 }
 
 input{
