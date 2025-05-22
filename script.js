@@ -141,5 +141,14 @@ function proporcional(){
     const msg5 = document.getElementById('msg5')
 
     let diariaPlano = valorDoPlano/30
-    let valorProporcional = 0
+    let valorProporcional = diasProporcionais * diariaPlano
+
+    valorProporcional = (valorProporcional).toFixed(2).replace('.', ',')
+
+    msg5.style.width = "300px"
+    msg5.style.borderRadius = "15px"
+    msg5.style.padding = "15px"
+    msg5.innerHTML = `
+        <strong>Valor proporcional:</strong> R$${valorProporcional}
+    `
 }
