@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 body{
     background-color: grey;
     color: white;
@@ -6,7 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 10px;
-    font-family: monospace;
+    font-family: 'Nova Square', sans-serif;
     font-size: 20px;
 }
 
@@ -44,7 +46,8 @@ section{
 
 h1{
     font-size: 24px;
-    color: rgb(100, 185, 108);
+    color: #63d711;
+    font-weight: bold;
 }
 
 input{
@@ -64,9 +67,9 @@ button{
     height: 40px;
     width: 100px;
     border-radius: 10px;
-    font-family: monospace;
+    font-family: 'Nova Square', sans-serif;
     font-size: 18px;
-    background-color: rgb(132, 235, 166);
+    background-color: #63d711;
 
 }
 .botao1{
