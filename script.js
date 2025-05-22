@@ -31,7 +31,6 @@ function trocaVencimento() {
     msg1.style.borderRadius = "15px"
     msg1.style.padding = "15px"
     msg1.style.height = "130px"
-    msg1.style.width = "350px"
     msg1.innerHTML = `
         <p>Realizando a troca de vencimento do dia ${vencimentoAtual} para o dia ${vencimentoNovo}, o sistema irá calcular o *proporcional* de ${diasProporcionais} dias, e 
         isso dará o valor de R$${valorTotal} para data escolhida, e as próximas faturas voltam para o valor real do seu plano que é R$${valorPlano}. Posso seguir com a 
@@ -42,8 +41,6 @@ function trocaVencimento() {
 
     msg2.style.borderRadius = "15px"
     msg2.style.padding = "15px"
-    msg2.style.height = "80px"
-    msg2.style.width = "350px"
     msg2.innerHTML = `
         Cliente quis alterar o vencimento de ${vencimentoAtual} para ${vencimentoNovo}
         Proporcional de ${diasProporcionais} dias R$${proporcional}

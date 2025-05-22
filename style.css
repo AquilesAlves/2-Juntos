@@ -12,15 +12,27 @@ body{
 
 section{
     display: flex;
+    align-items: flex-start;
     gap: 20px;
 }
 
-main{
+.main1{
+    width: 370px;
     padding: 30px;
     padding-bottom: 45px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 6px 6px 20px  rgba(0, 0, 0, 0.496);
+    border-radius: 15px;
+}
+.main2{
+    padding: 30px;
+    padding-bottom: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     box-shadow: 6px 6px 20px  rgba(0, 0, 0, 0.496);
     border-radius: 15px;
@@ -44,14 +56,20 @@ input{
 }
 
 button{
-    margin: 20px;
     height: 40px;
     width: 100px;
     border-radius: 10px;
     font-family: monospace;
     font-size: 18px;
-    background-color: rgb(220, 219, 219);
+    background-color: rgb(132, 235, 166);
 
+}
+.botao1{
+    margin: 20px;
+}
+
+.botoes{
+    margin-bottom: 20px;
 }
 
 .msg{
@@ -62,4 +80,6 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    min-height: 0px;
+
 }
