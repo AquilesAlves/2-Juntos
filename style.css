@@ -113,3 +113,17 @@ button:hover{
     flex-direction: row;
     gap: 5px
 }
+
+footer{
+    font-size: 18px;
+    color: #848484;
+    margin-top: 33px;
+}
+a{
+    text-decoration: none;
+    color: #848484;
+    transition: color 0.3s ease;
+}
+a:hover{
+    color: #32cd32;
+}
