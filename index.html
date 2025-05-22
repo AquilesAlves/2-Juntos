@@ -8,25 +8,31 @@
 </head>
 <body>
     <section>
-        <main class="main1">
+        <div class="div1">
             <h1>Proporcional de Vencimento</h1>
             <p>Dia do vencimento atual:</p>
             <input type="number" class="input" id="vencimentoAtual" min="1" max="31">
+
             <p>Dia do novo vencimento:</p>
             <input type="number" class="input" id="vencimentoNovo" min="1" max="31">
+
             <p>Valor do plano (R$):</p>
             <input type="number" class="input" id="valorPlano" step="0.01">
             <button class="botao1" onclick="trocaVencimento()">Calcular</button>
         
             <div class="msg" id="msg1" ></div>
             <button class="botoes" id="copy1" style="display: none" onclick="copiar1()" >Copiar</button>
+
             <div class="msg" id="msg2" ></div>
             <button class="botoes" id="copy2" style="display: none" onclick="copiar2()" >Copiar</button>
-        </main>
-        <main class="main2">
+        </div>
+
+
+        <div class="div2">
           <h1>Proporcional de Plano</h1>
           <p>Digite o valor do plano antigo:</p>
           <input type="number" class="input" id="valorAntigo">
+
           <p>Digite o valor do plano novo:</p>
           <input type="number" class="input" id="valorNovo">
 
@@ -35,13 +41,28 @@
         
           <p>Digite o dia da Troca:</p>
           <input type="number" class="input" id="dataTroca">
-          <button class="botao1" class="calcular" onclick="calculaProporcional()">Calcular</button>
+          <button class="botao1" onclick="calculaProporcional()">Calcular</button>
         
           <div class="msg" id="msg3" ></div>
           <button class="botoes" id="copy3" style="display: none" onclick="copiar3()" >Copiar</button>
+
           <div class="msg" id="msg4"></div>
           <button class="botoes" id="copy4" style="display: none" onclick="copiar4()" >Copiar</button>
-        </main>
+        </div>
+
+
+        <div class="div3">
+            <h1>Desconto/cancelamento</h1>
+            <p>Digite os dias proporcionais:</p>
+            <input type="number" class="input" id="diasProporcionais">
+
+            <p>Digite o valor do plano (R$):</p>
+            <input type="number" class="input" id="valorPlano">
+            <button class="botao1" onclick="proporcional()">Calcular</button>
+
+            <div class="msg" id="msg5">teste</div>
+
+        </div>
     </section>
         
 <script src="script.js"></script>

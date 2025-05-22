@@ -42,10 +42,10 @@ function trocaVencimento() {
     msg2.style.borderRadius = "15px"
     msg2.style.padding = "15px"
     msg2.innerHTML = `
-        Cliente quis alterar o vencimento de ${vencimentoAtual} para ${vencimentoNovo}<br>
+        <p>Cliente quis alterar o vencimento de ${vencimentoAtual} para ${vencimentoNovo}<br>
         Proporcional de ${diasProporcionais} dias R$${proporcional}<br>
         Mais o valor da fatura R$${valorPlano}<br>
-        Total de R$${valorTotal}
+        Total de R$${valorTotal}</p>
     `
     document.getElementById('copy2').style.display = 'block'
 
@@ -116,11 +116,11 @@ function calculaProporcional() {
     msg4.style.borderRadius = "15px"
     msg4.style.padding = "15px"
     msg4.innerHTML = `
-        Cliente solicitou a troca do plano
+        <p>Cliente solicitou a troca do plano
         Proporcional de ${diasPlanoAntigo} dias do plano antigo R$${proporcionalAntigo}
         e ${diasPlanoNovo} dias do plano novo R$${proporcionalNovo}<br>
         Valor total de R$${valorTotal} referente aos dias<br>
-        Ciente do novo valor R$${valorNovo}
+        Ciente do novo valor R$${valorNovo}</p>
     `
     document.getElementById('copy4').style.display = 'block'
 
