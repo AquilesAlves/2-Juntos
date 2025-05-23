@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
 
-body{
-    background-color: #121212;
-    color: #cccccc;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
+html{
+    height: 100%;
+    margin: 0;
     font-family: 'Nova Square', sans-serif;
     font-size: 20px;
+    background-color: #121212;
+    color: #cccccc;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; /* para garantir zero margem */
+    height: 100%; /* para garantir altura total, útil para flex */
+}
+
+main{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 section{
@@ -18,13 +30,13 @@ section{
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
+    padding: 30px;
 
 }
 
-.div1, .div2, .div3{
+.card{
     width: 345px;
-    padding: 30px;
-    padding-bottom: 45px;
+    padding: 30px 30px 45px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -35,7 +47,7 @@ section{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.div1:hover, .div2:hover, .div3:hover{
+.card:hover{
     transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0,0,0,0.7);
 }
@@ -44,7 +56,7 @@ h1{
     font-size: 24px;
     color: #e0e0e0;
     font-weight: bold;
-    border-bottom: 2px solid #32cd32;
+    border-bottom: 2px solid limegreen;
     padding-bottom: 5px;
 }
 
@@ -57,14 +69,12 @@ input{
     color: #cccccc;
     background-color: #2b2b2b;
     border: 2px solid #444;
-}
-.input{
     text-align: center;
     padding-left: 15px;
 }
 
-.input:focus {
-    border-color: #898989;; /* verde lima */
+input:focus {
+    border-color: #898989;
     background-color: #333;
     outline: none;
 }
@@ -75,7 +85,7 @@ button{
     border-radius: 10px;
     font-family: 'Nova Square', sans-serif;
     font-size: 18px;
-    background-color: rgb(78, 247, 69);
+    background-color: limegreen;
     border: 2px solid #2d2d2d;
     transition: transform 0.2s ease;
 }
@@ -84,16 +94,15 @@ button:hover{
     transform: scale(1.05);    
 }
 
-.botao1{
-    background-color: #32cd32;
+.botaoPrincipal{
+    background-color: limegreen;
     color: #121212;
     margin: 8px;
 }
 
-.botoes{
-    background-color: #32cd32;
-    margin-top: 5px;
-    margin-bottom: 20px;
+.botaoSecundario{
+    background-color: limegreen;
+    margin: 5px 0 20px;
 }
 
 .msg{
@@ -117,7 +126,7 @@ button:hover{
 footer{
     font-size: 18px;
     color: #848484;
-    margin-top: 33px;
+    padding: 10px 0;
 }
 a{
     text-decoration: none;
@@ -125,5 +134,5 @@ a{
     transition: color 0.3s ease;
 }
 a:hover{
-    color: #32cd32;
+    color: limegreen;
 }

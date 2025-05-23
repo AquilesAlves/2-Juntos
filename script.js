@@ -8,20 +8,17 @@ function trocaVencimento() {
 
     let diariaPlano = valorPlano / 30
     let diasProporcionais = 0
-    let proporcional = 0
-    let valorTotal = 0
 
     if (vencimentoAtual < vencimentoNovo) {
         diasProporcionais = vencimentoNovo - vencimentoAtual
-        proporcional = (diariaPlano * diasProporcionais)
 
     } else {
         diasProporcionais = (30 - vencimentoAtual) + vencimentoNovo
-        proporcional = diariaPlano * diasProporcionais
 
     }
 
-    valorTotal = proporcional + valorPlano
+    let proporcional = diariaPlano * diasProporcionais
+    let valorTotal = proporcional + valorPlano
 
     valorTotal = (valorTotal).toFixed(2).replace('.', ',')
     valorPlano = (valorPlano).toFixed(2).replace('.', ',')
@@ -69,30 +66,24 @@ function trocaPlano() {
     const msg4 = document.getElementById('msg4')
 
     //valor diario de cada plano
-    let diariaAntigo = valorAntigo/30
-    let diariaNovo = valorNovo/30
+    let diariaAntigo = valorAntigo / 30
+    let diariaNovo = valorNovo / 30
 
     //declaração de variaveis
-    let diasPlanoAntigo = 0
-    let diasPlanoNovo = 0
-    let proporcionalAntigo = 0
-    let proporcionalNovo = 0
+    let diasPlanoAntigo, diasPlanoNovo
 
     //if else para fazer o calculo
     if (dataTroca > vencimento) {
         diasPlanoAntigo = dataTroca - vencimento
         diasPlanoNovo = vencimento - dataTroca + 30
 
-        proporcionalAntigo = diariaAntigo * diasPlanoAntigo
-        proporcionalNovo = diariaNovo * diasPlanoNovo
-
     } else {
         diasPlanoAntigo = dataTroca - vencimento + 30
         diasPlanoNovo = vencimento - dataTroca 
-
-        proporcionalAntigo = diariaAntigo * diasPlanoAntigo
-        proporcionalNovo = diariaNovo * diasPlanoNovo
     }
+
+    let proporcionalAntigo = diariaAntigo * diasPlanoAntigo
+    let proporcionalNovo = diariaNovo * diasPlanoNovo    
     let valorTotal = proporcionalAntigo + proporcionalNovo
 
     //formatar a casa decimal e a virgula
