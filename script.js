@@ -129,17 +129,34 @@ function copiar4() {
 function proporcional(){
     let diasProporcionais = parseInt(document.getElementById('diasProporcionais').value)
     let valorDoPlano = parseFloat(document.getElementById('valorDoPlano').value)
-    const msg5 = document.getElementById('msg5')
-
     let diariaPlano = valorDoPlano/30
     let valorProporcional = diasProporcionais * diariaPlano
 
+    let valorAtualizado = valorDoPlano - valorProporcional
+
     valorProporcional = (valorProporcional).toFixed(2).replace('.', ',')
+    valorAtualizado = (valorAtualizado).toFixed(2).replace('.', ',')
+
+
+
+    document.getElementById('texto1').style.display = 'block'
+    document.getElementById('texto2').style.display = 'block'
+    
 
     msg5.style.width = "300px"
     msg5.style.borderRadius = "15px"
     msg5.style.padding = "15px"
     msg5.innerHTML = `
-        <strong>Valor proporcional:</strong> R$${valorProporcional}
+        Conforme verificado, foi aplicado um desconto de R$${valorProporcional} devido a ${diasProporcionais} dias sem conexão. Fatura ajustada para R$${valorAtualizado}
+    `
+
+    msg6.style.width = "300px"
+    msg6.style.borderRadius = "15px"
+    msg6.style.padding = "15px"
+    msg6.innerHTML = `
+        Conforme verificado, fica um proporcional de cancelamento no valor de R$${valorProporcional} devido a ${diasProporcionais} dias de utilização.
     `
 }
+
+
+
