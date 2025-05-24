@@ -109,7 +109,7 @@ function trocaPlano() {
         <p>Cliente solicitou a troca do plano
         Proporcional de ${diasPlanoAntigo} dias do plano antigo R$${proporcionalAntigo}
         e ${diasPlanoNovo} dias do plano novo R$${proporcionalNovo}<br>
-        Valor total de R$${valorTotal} referente aos dias<br>
+        Valor total de R$${valorTotal} referente aos dias proporcionais<br>
         Ciente do novo valor R$${valorNovo}</p>
     `
     document.getElementById('copy4').style.display = 'block'
@@ -149,14 +149,27 @@ function proporcional(){
     msg5.innerHTML = `
         Conforme verificado, foi aplicado um desconto de R$${valorProporcional} devido a ${diasProporcionais} dias sem conexão. Fatura ajustada para R$${valorAtualizado}
     `
-
+    document.getElementById('copy5').style.display = 'block'
+    
     msg6.style.width = "300px"
     msg6.style.borderRadius = "15px"
     msg6.style.padding = "15px"
     msg6.innerHTML = `
-        Conforme verificado, fica um proporcional de cancelamento no valor de R$${valorProporcional} devido a ${diasProporcionais} dias de utilização.
+    Conforme verificado, fica um proporcional de cancelamento no valor de R$${valorProporcional} devido a ${diasProporcionais} dias de utilização.
     `
+    document.getElementById('copy6').style.display = 'block'
 }
+
+function copiar5() {
+    navigator.clipboard.writeText(document.getElementById('msg5').innerText)
+
+}
+
+function copiar6() {
+    navigator.clipboard.writeText(document.getElementById('msg6').innerText)
+
+}
+
 
 
 
