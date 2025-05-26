@@ -17,7 +17,17 @@ body{
     height: 100%; /* para garantir altura total, útil para flex */
 }
 
+header{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 150px;
+}
+
 main{
+    margin: 0;
+    padding: 0;
     flex: 1;
     width: 100%;
     display: flex;
