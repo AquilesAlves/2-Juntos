@@ -95,7 +95,7 @@ function trocaPlano() {
     if (dataTroca == 31) {
         diariaAntigo = valorAntigo / 31
         diariaNovo = valorNovo / 31
-        diasPlanoAntigo += 1
+        diasPlanoNovo += 1
     } else {
         diariaAntigo = valorAntigo / 30
         diariaNovo = valorNovo / 30
