@@ -70,7 +70,6 @@ function trocaPlano() {
     const msg4 = document.getElementById('msg4')
 
     
-    
     //declaração de variaveis
     let diasPlanoAntigo, diasPlanoNovo
     

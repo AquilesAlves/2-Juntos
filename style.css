@@ -18,8 +18,8 @@ body{
 }
 
 header{
-    margin:  0.6em;
-    margin-top: 1em;
+    margin:  0.5em;
+    margin-top: 0.9em;
     padding: 0;
 }
 .logo{
@@ -105,13 +105,11 @@ button:hover{
 }
 
 .botaoPrincipal{
-    background-color: limegreen;
     color: #121212;
     margin: 8px;
 }
 
 .botaoSecundario{
-    background-color: limegreen;
     margin: 5px;
 }
 
